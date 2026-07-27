@@ -1,0 +1,325 @@
+/* Quiet Authority — prototype 1
+   Custom layer sitting on top of Tailwind (Play CDN). Kept deliberately small:
+   Tailwind utilities do the layout work; this file holds the typographic
+   rhythm, the "spine" rail, and motion rules. */
+
+:root {
+  --ivory: #f7f3ec;
+  --parchment: #efe8dc;
+  --stone: #dcd3c4;
+  --charcoal: #2b2825;
+  --ink: #211f1c;
+  --bronze: #8c6a4a;
+  --bronze-deep: #7a5a3c;
+  --muted: #6b6259;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-variant-numeric: oldstyle-nums proportional-nums;
+  text-rendering: optimizeLegibility;
+}
+
+::selection {
+  background: #e3d5c2;
+  color: var(--charcoal);
+}
+
+/* ---------- Measure & rhythm ---------- */
+
+.wrap {
+  width: 100%;
+  max-width: 74rem;
+  margin-inline: auto;
+  padding-inline: clamp(1.375rem, 5vw, 4rem);
+}
+
+.section {
+  padding-block: clamp(3.75rem, 8vw, 7rem);
+}
+
+.section-tight {
+  padding-block: clamp(2.75rem, 5.5vw, 4.5rem);
+}
+
+/* Display type: Newsreader wants slightly negative tracking at large sizes */
+.display {
+  font-family: "Newsreader", Georgia, serif;
+  font-weight: 300;
+  letter-spacing: -0.018em;
+  line-height: 1.06;
+}
+
+.display-sm {
+  font-family: "Newsreader", Georgia, serif;
+  font-weight: 300;
+  letter-spacing: -0.008em;
+  line-height: 1.18;
+}
+
+.eyebrow {
+  font-family: "Archivo", system-ui, sans-serif;
+  font-size: 0.6875rem;
+  font-weight: 500;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.lede {
+  font-size: clamp(1.0625rem, 1.6vw, 1.1875rem);
+  line-height: 1.72;
+  color: #4a443d;
+}
+
+/* ---------- The spine: vertical rail label ---------- */
+
+.rail-label {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  font-family: "Archivo", system-ui, sans-serif;
+  font-size: 0.6875rem;
+  font-weight: 500;
+  letter-spacing: 0.34em;
+  text-transform: uppercase;
+  color: var(--muted);
+  white-space: nowrap;
+}
+
+.rail-tick {
+  width: 1px;
+  height: 3.25rem;
+  background: linear-gradient(to bottom, transparent, var(--bronze));
+}
+
+/* ---------- Ruled schedule (practice areas, insights, timeline) ---------- */
+
+.schedule > * + * {
+  border-top: 1px solid var(--stone);
+}
+
+.schedule-row {
+  display: block;
+  padding-block: clamp(1.5rem, 3vw, 2.25rem);
+  transition: background-color 400ms cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+a.schedule-row:hover,
+a.schedule-row:focus-visible {
+  background-color: #f1eade;
+}
+
+a.schedule-row:hover .schedule-title,
+a.schedule-row:focus-visible .schedule-title {
+  color: var(--bronze-deep);
+}
+
+.schedule-title {
+  transition: color 300ms ease;
+}
+
+/* ---------- Buttons & links ---------- */
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-family: "Archivo", system-ui, sans-serif;
+  font-size: 0.6875rem;
+  font-weight: 500;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  padding: 1rem 1.75rem;
+  border: 1px solid var(--charcoal);
+  color: var(--charcoal);
+  background: transparent;
+  transition: background-color 320ms ease, color 320ms ease, border-color 320ms ease;
+}
+
+.btn:hover {
+  background: var(--charcoal);
+  color: var(--ivory);
+}
+
+.btn-light {
+  border-color: rgba(247, 243, 236, 0.42);
+  color: var(--ivory);
+}
+
+.btn-light:hover {
+  background: var(--ivory);
+  color: var(--ink);
+  border-color: var(--ivory);
+}
+
+.link-rule {
+  font-family: "Archivo", system-ui, sans-serif;
+  font-size: 0.6875rem;
+  font-weight: 500;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--bronze-deep);
+  padding-bottom: 0.4rem;
+  border-bottom: 1px solid var(--stone);
+  transition: border-color 320ms ease, color 320ms ease;
+}
+
+.link-rule:hover {
+  color: var(--charcoal);
+  border-bottom-color: var(--bronze);
+}
+
+.link-rule-light {
+  color: #c6a17a;
+  border-bottom-color: rgba(247, 243, 236, 0.3);
+}
+
+.link-rule-light:hover {
+  color: var(--ivory);
+  border-bottom-color: var(--ivory);
+}
+
+/* ---------- Focus ---------- */
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible,
+summary:focus-visible {
+  outline: 2px solid var(--bronze);
+  outline-offset: 3px;
+  border-radius: 1px;
+}
+
+.skip-link {
+  position: absolute;
+  left: 1rem;
+  top: -4rem;
+  z-index: 80;
+  background: var(--charcoal);
+  color: var(--ivory);
+  font-family: "Archivo", system-ui, sans-serif;
+  font-size: 0.75rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  padding: 0.75rem 1.25rem;
+  transition: top 200ms ease;
+}
+
+.skip-link:focus {
+  top: 1rem;
+}
+
+/* ---------- Long-form prose (article & detail pages) ---------- */
+
+.prose-quiet {
+  font-size: 1.0625rem;
+  line-height: 1.85;
+  color: #3a352f;
+}
+
+.prose-quiet > p + p {
+  margin-top: 1.55em;
+}
+
+.prose-quiet strong {
+  font-weight: 600;
+  color: var(--charcoal);
+}
+
+/* Small caps opener on the first paragraph of a long read */
+.prose-quiet .opener::first-line {
+  font-variant-caps: all-small-caps;
+  letter-spacing: 0.08em;
+}
+
+/* ---------- Photography treatment ----------
+   The placeholder portraits run cool; a light warm grade settles them
+   into the ivory palette without looking filtered. */
+.photo-grade {
+  filter: saturate(0.82) contrast(1.02) sepia(0.07);
+}
+
+/* ---------- Forms ---------- */
+
+.field-label {
+  font-family: "Archivo", system-ui, sans-serif;
+  font-size: 0.6875rem;
+  font-weight: 500;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--muted);
+  display: block;
+  margin-bottom: 0.625rem;
+}
+
+.field {
+  width: 100%;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid var(--stone);
+  padding: 0.6rem 0 0.75rem;
+  font-family: "Source Serif 4", Georgia, serif;
+  font-size: 1rem;
+  color: var(--charcoal);
+  transition: border-color 300ms ease;
+}
+
+.field:hover {
+  border-bottom-color: #c6bba7;
+}
+
+.field:focus {
+  border-bottom-color: var(--bronze);
+}
+
+select.field {
+  appearance: none;
+  background-image: linear-gradient(45deg, transparent 50%, var(--muted) 50%),
+    linear-gradient(135deg, var(--muted) 50%, transparent 50%);
+  background-position: calc(100% - 11px) calc(50% + 1px), calc(100% - 6px) calc(50% + 1px);
+  background-size: 5px 5px, 5px 5px;
+  background-repeat: no-repeat;
+  padding-right: 1.75rem;
+  border-radius: 0;
+}
+
+/* ---------- Motion ---------- */
+
+.js .reveal {
+  opacity: 0;
+  transform: translateY(12px);
+}
+
+.js .reveal.is-visible {
+  opacity: 1;
+  transform: none;
+  transition: opacity 900ms cubic-bezier(0.22, 0.61, 0.36, 1),
+    transform 900ms cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .js .reveal,
+  .js .reveal.is-visible {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}

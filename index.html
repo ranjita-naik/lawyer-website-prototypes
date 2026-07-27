@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Website Design Prototypes — Review</title>
+<meta name="description" content="Three website design prototypes prepared for review. All content is fictional placeholder material.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,400;6..72,500&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          paper: '#F7F5F1',
+          ink: '#232220',
+          muted: '#6B6660',
+          line: '#E4E0D8',
+        },
+        fontFamily: {
+          display: ['Newsreader', 'Georgia', 'serif'],
+          sans: ['Inter', 'system-ui', 'sans-serif'],
+        },
+      },
+    },
+  };
+</script>
+<style>
+  html { scroll-behavior: smooth; }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+  .card-shot { aspect-ratio: 4/3; object-fit: cover; object-position: top; }
+  a.focus-ring:focus-visible { outline: 2px solid #232220; outline-offset: 3px; }
+</style>
+</head>
+<body class="bg-paper font-sans text-ink antialiased">
+  <a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:bg-ink focus:text-white focus:px-4 focus:py-2 focus:rounded">Skip to content</a>
+
+  <header class="border-b border-line">
+    <div class="max-w-5xl mx-auto px-6 py-8">
+      <p class="text-[11px] uppercase tracking-[0.18em] text-muted font-medium">Design Review</p>
+      <h1 class="font-display text-3xl sm:text-4xl mt-2">Three Website Prototypes</h1>
+      <p class="mt-3 text-[15px] text-muted max-w-2xl leading-relaxed">
+        Three distinct design directions for the same fictional placeholder identity — Advocate
+        Arjun Mehta — so this review is about design, not content. Click into any prototype below
+        and browse it as a real visitor would, including on your phone.
+      </p>
+    </div>
+  </header>
+
+  <main id="main" class="max-w-5xl mx-auto px-6 py-12">
+    <div class="grid gap-8 sm:grid-cols-3">
+
+      <a href="prototype-01-quiet-authority/index.html" class="focus-ring group block rounded-lg border border-line overflow-hidden bg-white hover:shadow-lg transition-shadow duration-300">
+        <img src="pdf/assets/prototype-01-quiet-authority/index-thumb.png" alt="" class="card-shot w-full border-b border-line" loading="lazy">
+        <div class="p-5">
+          <p class="text-[11px] uppercase tracking-[0.14em] text-muted font-medium">Prototype 01</p>
+          <h2 class="font-display text-xl mt-1">Quiet Authority</h2>
+          <p class="mt-2 text-[13.5px] text-muted leading-relaxed">Restrained, editorial, senior-litigator voice. Ivory, stone and bronze.</p>
+          <span class="mt-4 inline-block text-[12px] font-medium underline decoration-line group-hover:decoration-ink underline-offset-4">Open prototype &rarr;</span>
+        </div>
+      </a>
+
+      <a href="prototype-02-contemporary-counsel/index.html" class="focus-ring group block rounded-lg border border-line overflow-hidden bg-white hover:shadow-lg transition-shadow duration-300">
+        <img src="pdf/assets/prototype-02-contemporary-counsel/index-thumb.png" alt="" class="card-shot w-full border-b border-line" loading="lazy">
+        <div class="p-5">
+          <p class="text-[11px] uppercase tracking-[0.14em] text-muted font-medium">Prototype 02</p>
+          <h2 class="font-display text-xl mt-1">Contemporary Counsel</h2>
+          <p class="mt-2 text-[13.5px] text-muted leading-relaxed">Modern, business-literate, ledger-grid structure. Mineral green and charcoal.</p>
+          <span class="mt-4 inline-block text-[12px] font-medium underline decoration-line group-hover:decoration-ink underline-offset-4">Open prototype &rarr;</span>
+        </div>
+      </a>
+
+      <a href="prototype-03-human-centered-advocate/index.html" class="focus-ring group block rounded-lg border border-line overflow-hidden bg-white hover:shadow-lg transition-shadow duration-300">
+        <img src="pdf/assets/prototype-03-human-centered-advocate/index-thumb.png" alt="" class="card-shot w-full border-b border-line" loading="lazy">
+        <div class="p-5">
+          <p class="text-[11px] uppercase tracking-[0.14em] text-muted font-medium">Prototype 03</p>
+          <h2 class="font-display text-xl mt-1">Human-Centered Advocate</h2>
+          <p class="mt-2 text-[13.5px] text-muted leading-relaxed">Warm, plainly-spoken, formal/plain-language pairing. Sand, clay and sage.</p>
+          <span class="mt-4 inline-block text-[12px] font-medium underline decoration-line group-hover:decoration-ink underline-offset-4">Open prototype &rarr;</span>
+        </div>
+      </a>
+
+    </div>
+
+    <section class="mt-16 border-t border-line pt-10">
+      <h2 class="font-display text-xl">Presentation decks (PDF)</h2>
+      <p class="mt-2 text-[13.5px] text-muted max-w-2xl leading-relaxed">
+        For an offline leave-behind or a printed reference, each prototype also has a curated PDF
+        deck (concept, palette, typography, sitemap and page views), plus a side-by-side comparison.
+      </p>
+      <ul class="mt-5 flex flex-wrap gap-x-8 gap-y-2 text-[14px]">
+        <li><a class="focus-ring underline decoration-line hover:decoration-ink underline-offset-4" href="pdf/prototype-01-quiet-authority.pdf">Quiet Authority — PDF</a></li>
+        <li><a class="focus-ring underline decoration-line hover:decoration-ink underline-offset-4" href="pdf/prototype-02-contemporary-counsel.pdf">Contemporary Counsel — PDF</a></li>
+        <li><a class="focus-ring underline decoration-line hover:decoration-ink underline-offset-4" href="pdf/prototype-03-human-centered-advocate.pdf">Human-Centered Advocate — PDF</a></li>
+        <li><a class="focus-ring underline decoration-line hover:decoration-ink underline-offset-4" href="pdf/prototype-comparison.pdf">Side-by-side comparison — PDF</a></li>
+      </ul>
+    </section>
+
+    <section class="mt-14 border-t border-line pt-8">
+      <p class="text-[12.5px] text-muted max-w-2xl leading-relaxed">
+        All three prototypes are design demonstrations only. The name, photograph, credentials,
+        biography, matters, articles and contact details shown throughout are fictional
+        placeholders created solely to demonstrate design and structure — see each prototype's
+        Disclaimer page for the full notice. These pages are marked <code class="text-[11.5px]">noindex</code>
+        and are not intended to be found via search.
+      </p>
+    </section>
+  </main>
+
+  <footer class="border-t border-line">
+    <div class="max-w-5xl mx-auto px-6 py-6 text-[12px] text-muted">
+      Prepared for design review. Not a live client website.
+    </div>
+  </footer>
+</body>
+</html>

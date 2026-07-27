@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Corporate Advisory &mdash; Arjun Mehta, Advocate</title>
+  <meta name="description" content="Corporate advisory work for founders and businesses: commercial contracts, governance matters and day-to-day legal questions, from the chambers of Arjun Mehta, Advocate, Mumbai.">
+  <meta name="robots" content="noindex, nofollow">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Corporate Advisory &mdash; Arjun Mehta, Advocate">
+  <meta property="og:description" content="Corporate advisory work for founders and businesses: commercial contracts, governance matters and day-to-day legal questions, from the chambers of Arjun Mehta, Advocate, Mumbai.">
+  <meta property="og:site_name" content="Arjun Mehta, Advocate">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500&family=Schibsted+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            paper:     '#FAFAF8',
+            surface:   '#F1F1EC',
+            ink:       '#23302F',
+            muted:     '#5F6E6C',
+            line:      '#E3E3DC',
+            accent:    '#2F6B5B',
+            accentdk:  '#27594C',
+            accentsoft:'#E8F0EC',
+            accentlt:  '#7FB3A0',
+            deep:      '#1B2624',
+          },
+          fontFamily: {
+            display: ['"Schibsted Grotesk"', 'system-ui', 'sans-serif'],
+            sans:    ['Inter', 'system-ui', 'sans-serif'],
+            mono:    ['"IBM Plex Mono"', 'ui-monospace', 'monospace'],
+          },
+          maxWidth: { shell: '76rem', measure: '38rem' },
+        }
+      }
+    }
+</script>
+  <style>
+    :root { color-scheme: light; }
+    html { -webkit-text-size-adjust: 100%; }
+    body { font-feature-settings: "cv05" 1, "ss01" 1; }
+
+    /* Focus: one consistent, visible ring everywhere. */
+    :focus-visible {
+      outline: 2px solid #2F6B5B;
+      outline-offset: 3px;
+      border-radius: 2px;
+    }
+    .on-dark :focus-visible { outline-color: #7FB3A0; }
+
+    /* Utility label: the practice's "reference" voice — used only for metadata. */
+    .label {
+      font-family: "IBM Plex Mono", ui-monospace, monospace;
+      font-size: 0.6875rem;
+      line-height: 1.4;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: #5F6E6C;
+    }
+    .on-dark .label { color: #A8B5B1; }
+
+    /* Signature: a section rule opens with a short mineral-green segment.
+       Reserved for section-level rules only — repeated sub-items use .rule. */
+    .sec { position: relative; border-top: 1px solid #E3E3DC; }
+    .sec::before {
+      content: ""; position: absolute; top: -1px; left: 0;
+      width: 3.5rem; height: 1px; background: #2F6B5B;
+    }
+    .on-dark .sec { border-top-color: rgba(250,250,248,0.16); }
+    .on-dark .sec::before { background: #7FB3A0; }
+
+    .rule { border-top: 1px solid #E3E3DC; }
+    .on-dark .rule { border-top-color: rgba(250,250,248,0.16); }
+
+    /* Underline that draws in from the left on hover/focus. */
+    .ul-draw {
+      background-image: linear-gradient(currentColor, currentColor);
+      background-repeat: no-repeat;
+      background-position: 0 100%;
+      background-size: 0% 1px;
+      transition: background-size 320ms cubic-bezier(0.22,0.61,0.36,1);
+      padding-bottom: 2px;
+    }
+    .ul-draw:hover, .ul-draw:focus-visible { background-size: 100% 1px; }
+
+    /* Scroll reveal */
+    [data-reveal] {
+      opacity: 0;
+      transform: translateY(14px);
+      transition: opacity 700ms cubic-bezier(0.22,0.61,0.36,1),
+                  transform 700ms cubic-bezier(0.22,0.61,0.36,1);
+    }
+    [data-reveal].is-in { opacity: 1; transform: none; }
+
+    /* Page-load sequence for the hero only. */
+    .lift { opacity: 0; transform: translateY(12px); animation: lift 800ms cubic-bezier(0.22,0.61,0.36,1) forwards; }
+    .lift-1 { animation-delay: 60ms; }
+    .lift-2 { animation-delay: 150ms; }
+    .lift-3 { animation-delay: 240ms; }
+    .lift-4 { animation-delay: 330ms; }
+    @keyframes lift { to { opacity: 1; transform: none; } }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: 0.001ms !important;
+        animation-delay: 0ms !important;
+        transition-duration: 0.001ms !important;
+      }
+      [data-reveal] { opacity: 1; transform: none; }
+      .lift { opacity: 1; transform: none; }
+      html { scroll-behavior: auto; }
+    }
+
+    /* Photographic treatment: pull the warm stock imagery toward the mineral palette. */
+    .img-tuned { filter: saturate(0.72) contrast(1.02); }
+    .img-tuned-warm { filter: saturate(0.45) contrast(1.04) brightness(1.01); }
+
+    /* Article body */
+    .prose-note p { margin-top: 1.35rem; }
+    .prose-note p:first-child { margin-top: 0; }
+</style>
+</head>
+<body class="bg-paper font-sans text-ink antialiased">
+  <a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:left-6 focus:top-4 focus:z-[60] focus:rounded-[3px] focus:bg-ink focus:px-4 focus:py-2.5 focus:font-display focus:text-sm focus:text-paper">Skip to content</a>
+
+  <header class="sticky top-0 z-50 border-b border-line bg-paper/90 backdrop-blur-md">
+      <div class="mx-auto max-w-shell px-6 md:px-10">
+        <div class="flex h-16 items-center justify-between gap-6 md:h-20">
+          <a href="index.html" class="flex items-baseline gap-3">
+            <span class="font-display text-[1.0625rem] font-semibold tracking-[-0.02em] text-ink">Arjun Mehta</span>
+            <span aria-hidden="true" class="hidden h-3 w-px bg-line sm:block"></span>
+            <span class="label hidden sm:block">Advocate</span>
+          </a>
+          <nav class="hidden items-center gap-7 lg:flex" aria-label="Primary">
+            <a href="index.html" class="font-display text-[0.9375rem] tracking-[-0.01em] transition-colors duration-200 text-muted hover:text-ink font-normal">Home</a>
+            <a href="about.html" class="font-display text-[0.9375rem] tracking-[-0.01em] transition-colors duration-200 text-muted hover:text-ink font-normal">Profile</a>
+            <a href="practice-areas.html" class="font-display text-[0.9375rem] tracking-[-0.01em] transition-colors duration-200 text-ink font-medium" aria-current="page">Practice</a>
+            <a href="experience.html" class="font-display text-[0.9375rem] tracking-[-0.01em] transition-colors duration-200 text-muted hover:text-ink font-normal">Experience</a>
+            <a href="insights.html" class="font-display text-[0.9375rem] tracking-[-0.01em] transition-colors duration-200 text-muted hover:text-ink font-normal">Insights</a>
+            <a href="contact.html" class="font-display text-[0.9375rem] tracking-[-0.01em] transition-colors duration-200 text-muted hover:text-ink font-normal">Contact</a>
+            <a href="contact.html" class="rounded-[3px] border border-accent/35 px-4 py-2 font-display text-[0.875rem] font-medium tracking-[-0.01em] text-accent transition-colors duration-200 hover:bg-accentsoft">Make a Professional Enquiry</a>
+          </nav>
+          <button type="button" id="navToggle" aria-expanded="false" aria-controls="mobileNav"
+                  class="-mr-2 inline-flex h-10 w-10 items-center justify-center rounded-[3px] text-ink transition-colors duration-200 hover:bg-surface lg:hidden">
+            <span class="sr-only">Open navigation</span>
+            <svg width="20" height="14" viewBox="0 0 20 14" fill="none" aria-hidden="true">
+              <path d="M0 1h20M0 7h20M0 13h20" stroke="currentColor" stroke-width="1.25"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div id="mobileNav" hidden class="border-t border-line bg-paper lg:hidden">
+        <nav class="mx-auto max-w-shell px-6 pb-6 pt-1 md:px-10" aria-label="Primary, mobile">
+          <a href="index.html" class="block border-b border-line py-3.5 font-display text-base tracking-[-0.01em] transition-colors duration-200 text-muted hover:text-ink">Home</a>
+            <a href="about.html" class="block border-b border-line py-3.5 font-display text-base tracking-[-0.01em] transition-colors duration-200 text-muted hover:text-ink">Profile</a>
+            <a href="practice-areas.html" class="block border-b border-line py-3.5 font-display text-base tracking-[-0.01em] transition-colors duration-200 text-ink font-medium" aria-current="page">Practice</a>
+            <a href="experience.html" class="block border-b border-line py-3.5 font-display text-base tracking-[-0.01em] transition-colors duration-200 text-muted hover:text-ink">Experience</a>
+            <a href="insights.html" class="block border-b border-line py-3.5 font-display text-base tracking-[-0.01em] transition-colors duration-200 text-muted hover:text-ink">Insights</a>
+            <a href="contact.html" class="block border-b border-line py-3.5 font-display text-base tracking-[-0.01em] transition-colors duration-200 text-muted hover:text-ink">Contact</a>
+          <a href="contact.html" class="inline-flex items-center justify-center rounded-[3px] bg-accent px-6 py-3.5 font-display text-[0.9375rem] font-medium tracking-[-0.01em] text-white transition-colors duration-200 hover:bg-accentdk mt-5 w-full">Make a Professional Enquiry</a>
+        </nav>
+      </div>
+    </header>
+
+  <main id="main">
+    <section class="border-b border-line">
+      <div class="mx-auto max-w-shell px-6 pb-14 pt-10 md:px-10 md:pb-20 md:pt-14">
+        <nav aria-label="Breadcrumb" class="lift lift-1">
+          <ol class="flex flex-wrap items-center gap-2 text-[0.8125rem] text-muted">
+            <li><a href="practice-areas.html" class="ul-draw transition-colors duration-200 hover:text-ink">Areas of practice</a></li>
+            <li aria-hidden="true">/</li>
+            <li class="text-ink">Corporate Advisory</li>
+          </ol>
+        </nav>
+        <h1 class="lift lift-2 mt-8 max-w-3xl font-display text-[2.125rem] font-medium leading-[1.08] tracking-[-0.03em] text-ink sm:text-[2.75rem] md:text-[3.25rem]">
+          Corporate Advisory
+        </h1>
+        <p class="lift lift-3 mt-6 max-w-measure text-[1.0625rem] leading-[1.8] text-muted md:text-[1.125rem]">
+          Advising founders and businesses on commercial contracts, governance matters and the day-to-day
+          legal questions that arise in running a company.
+        </p>
+      </div>
+    </section>
+
+    <section>
+      <div class="mx-auto max-w-shell px-6 py-16 md:px-10 md:py-24">
+        <div class="grid gap-14 lg:grid-cols-12 lg:gap-14">
+          <div class="lg:col-span-8">
+            <div class="sec grid gap-6 pt-7 md:grid-cols-12 md:gap-10 md:pt-9" data-reveal>
+              <h2 class="label md:col-span-3">Overview</h2>
+              <div class="prose-note max-w-measure text-[1.0625rem] leading-[1.8] text-ink md:col-span-9">
+                <p>
+                  Most companies do not need continuous legal cover. They need someone who understands the
+                  business well enough to answer a specific question quickly, and who will say when a
+                  question is genuinely difficult.
+                </p>
+                <p>
+                  Advisory work here sits alongside a disputes practice, which changes how documents get
+                  drafted. A clause is assessed not only for what it says, but for how it would be read by
+                  an opposing party, a court, or an arbitral tribunal several years from now.
+                </p>
+              </div>
+            </div>
+
+            <div class="mt-14 md:mt-20" data-reveal>
+              <h2 class="label">What this work involves</h2>
+              <div class="mt-8 space-y-7 md:mt-10">
+                <div class="rule grid gap-3 pt-6 md:grid-cols-12 md:gap-8 md:pt-7">
+                  <h3 class="font-display text-[1.125rem] font-medium tracking-[-0.02em] text-ink md:col-span-4">Commercial contracts</h3>
+                  <p class="max-w-measure text-[0.9375rem] leading-[1.8] text-muted md:col-span-8">Drafting, reviewing and negotiating the agreements a business runs on &mdash; supply and services arrangements, distribution terms, non-disclosure and settlement documents &mdash; with particular attention to dispute-resolution, termination and liability provisions.</p>
+                </div>
+                <div class="rule grid gap-3 pt-6 md:grid-cols-12 md:gap-8 md:pt-7">
+                  <h3 class="font-display text-[1.125rem] font-medium tracking-[-0.02em] text-ink md:col-span-4">Governance matters</h3>
+                  <p class="max-w-measure text-[0.9375rem] leading-[1.8] text-muted md:col-span-8">Advising on the constitutional documents and internal decision-making of a company, including questions that arise between founders, shareholders and the board in the ordinary course of running the business.</p>
+                </div>
+                <div class="rule grid gap-3 pt-6 md:grid-cols-12 md:gap-8 md:pt-7">
+                  <h3 class="font-display text-[1.125rem] font-medium tracking-[-0.02em] text-ink md:col-span-4">Day-to-day questions</h3>
+                  <p class="max-w-measure text-[0.9375rem] leading-[1.8] text-muted md:col-span-8">The shorter questions that do not warrant a formal opinion but should not be guessed at: a clause a counterparty has asked to change, a notice that has just arrived, a policy that needs to be defensible if challenged.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="sec mt-14 grid gap-6 pt-7 md:mt-20 md:grid-cols-12 md:gap-10 md:pt-9" data-reveal>
+              <h2 class="label md:col-span-3">How matters are handled</h2>
+              <div class="prose-note max-w-measure text-[1.0625rem] leading-[1.8] text-ink md:col-span-9">
+                <p>
+                  Instructions are taken directly and the work is carried out by Arjun Mehta rather than
+                  delegated to an associate team. Scope is agreed at the start, in writing, so that both
+                  the question and its limits are clear.
+                </p>
+                <p>
+                  Where an advisory matter later becomes contentious, it stays within the same practice.
+                  The background does not have to be explained twice.
+                </p>
+              </div>
+            </div>
+
+            <div class="mt-14 flex flex-wrap gap-3 md:mt-16" data-reveal>
+              <a href="contact.html" class="inline-flex items-center justify-center rounded-[3px] bg-accent px-6 py-3.5 font-display text-[0.9375rem] font-medium tracking-[-0.01em] text-white transition-colors duration-200 hover:bg-accentdk">Make a Professional Enquiry</a>
+              <a href="experience.html" class="inline-flex items-center justify-center rounded-[3px] border border-ink/20 px-6 py-3.5 font-display text-[0.9375rem] font-medium tracking-[-0.01em] text-ink transition-colors duration-200 hover:border-ink/45 hover:bg-surface">View selected matters</a>
+            </div>
+          </div>
+
+          <aside class="lg:col-span-4" aria-label="Related">
+            <div class="lg:sticky lg:top-28" data-reveal>
+              <!-- Temporary placeholder image (Unsplash). Replace with the client's own photography. -->
+              <div class="overflow-hidden rounded-[3px] bg-surface">
+                <img src="../shared/images/portrait-seated-alt.jpg"
+                     alt="Arjun Mehta, Advocate, seated at his desk"
+                     width="1400" height="2100" loading="lazy"
+                     class="img-tuned aspect-[4/3] w-full object-cover object-[50%_30%]">
+              </div>
+              <p class="label mt-4">Photograph used for illustrative purposes</p>
+
+              <h2 class="label mt-12">Other areas of practice</h2>
+              <ul class="mt-5 space-y-4">
+              <li class="border-t border-line pt-4">
+                <a href="practice-areas.html" class="ul-draw font-display text-[1rem] font-medium tracking-[-0.015em] text-ink">Commercial Disputes</a>
+              </li>
+              <li class="border-t border-line pt-4">
+                <a href="practice-areas.html" class="ul-draw font-display text-[1rem] font-medium tracking-[-0.015em] text-ink">Arbitration and Mediation</a>
+              </li>
+              <li class="border-t border-line pt-4">
+                <a href="practice-areas.html" class="ul-draw font-display text-[1rem] font-medium tracking-[-0.015em] text-ink">Employment Matters</a>
+              </li>
+              </ul>
+
+              <h2 class="label mt-12">Related insights</h2>
+              <ul class="mt-5 space-y-4">
+              <li class="border-t border-line pt-4">
+                <a href="article-detail.html" class="ul-draw font-display text-[1rem] font-medium leading-[1.4] tracking-[-0.015em] text-ink">Understanding Arbitration Clauses in Commercial Contracts</a>
+              </li>
+              <li class="border-t border-line pt-4">
+                <span class="font-display text-[1rem] font-medium leading-[1.4] tracking-[-0.015em] text-muted">Employment Contracts: What Founders Should Review Before Signing</span>
+              </li>
+              </ul>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="on-dark bg-deep text-paper">
+      <div class="mx-auto max-w-shell px-6 py-16 md:px-10 md:py-20">
+        <div class="grid gap-12 md:grid-cols-12 md:gap-10">
+          <div class="md:col-span-5">
+            <p class="font-display text-xl font-semibold tracking-[-0.02em] text-paper">Arjun Mehta</p>
+            <p class="label mt-2">Advocate &middot; Mumbai</p>
+            <p class="mt-6 max-w-xs text-[0.9375rem] leading-[1.7] text-paper/70">
+              Independent practice in corporate advisory, commercial disputes, arbitration and
+              employment matters.
+            </p>
+            <p class="label mt-6">Enrolment No. MAH/1284/2011</p>
+          </div>
+          <div class="md:col-span-3">
+            <h2 class="label">Navigate</h2>
+            <ul class="mt-5 space-y-3">
+              <li><a href="index.html" class="ul-draw text-[0.9375rem] text-paper/75 transition-colors duration-200 hover:text-paper">Home</a></li>
+              <li><a href="about.html" class="ul-draw text-[0.9375rem] text-paper/75 transition-colors duration-200 hover:text-paper">Profile</a></li>
+              <li><a href="practice-areas.html" class="ul-draw text-[0.9375rem] text-paper/75 transition-colors duration-200 hover:text-paper">Practice</a></li>
+              <li><a href="experience.html" class="ul-draw text-[0.9375rem] text-paper/75 transition-colors duration-200 hover:text-paper">Experience</a></li>
+              <li><a href="insights.html" class="ul-draw text-[0.9375rem] text-paper/75 transition-colors duration-200 hover:text-paper">Insights</a></li>
+              <li><a href="contact.html" class="ul-draw text-[0.9375rem] text-paper/75 transition-colors duration-200 hover:text-paper">Contact</a></li>
+            </ul>
+          </div>
+          <div class="md:col-span-4">
+            <h2 class="label">Office</h2>
+            <address class="mt-5 not-italic text-[0.9375rem] leading-[1.75] text-paper/75 [overflow-wrap:anywhere]">
+              4th Floor, Ruby House<br>
+              Bombay Samachar Marg, Fort<br>
+              Mumbai &ndash; 400001<br>
+              <span class="mt-3 block">+91 22 0000 0000</span>
+              office@arjunmehta-advocate.example
+            </address>
+            <p class="mt-4 text-[0.8125rem] leading-relaxed text-paper/50">
+              Illustrative placeholder address, number and email.
+            </p>
+          </div>
+        </div>
+
+        <div class="mt-14 border-t border-paper/15 pt-8">
+          <div class="flex flex-col gap-5 md:flex-row md:items-start md:justify-between">
+            <p class="max-w-2xl text-[0.8125rem] leading-relaxed text-paper/55">
+              Design prototype. The name, photograph, credentials, matters and contact details on this
+              site are fictional placeholders created to demonstrate design and structure.
+              <a href="disclaimer.html" class="ul-draw text-paper/85 transition-colors duration-200 hover:text-paper">Read the full disclaimer</a>.
+            </p>
+            <p class="label shrink-0">&copy; 2026 &middot; Prototype</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  <script>
+      (function () {
+        var toggle = document.getElementById('navToggle');
+        var panel = document.getElementById('mobileNav');
+        if (toggle && panel) {
+          toggle.addEventListener('click', function () {
+            var open = toggle.getAttribute('aria-expanded') === 'true';
+            toggle.setAttribute('aria-expanded', String(!open));
+            panel.hidden = open;
+            toggle.querySelector('.sr-only').textContent = open ? 'Open navigation' : 'Close navigation';
+          });
+        }
+
+        var reduce = window.matchMedia('(prefers-reduced-motion: reduce)');
+        var items = document.querySelectorAll('[data-reveal]');
+        if (reduce.matches || !('IntersectionObserver' in window)) {
+          items.forEach(function (el) { el.classList.add('is-in'); });
+        } else {
+          var io = new IntersectionObserver(function (entries) {
+            entries.forEach(function (entry) {
+              if (entry.isIntersecting) {
+                entry.target.classList.add('is-in');
+                io.unobserve(entry.target);
+              }
+            });
+          }, { rootMargin: '0px 0px -8% 0px', threshold: 0.05 });
+          items.forEach(function (el) { io.observe(el); });
+        }
+
+        var form = document.getElementById('enquiryForm');
+        if (form) {
+          form.addEventListener('submit', function (e) {
+            e.preventDefault();
+            var msg = document.getElementById('formNotice');
+            if (msg) { msg.hidden = false; }
+          });
+        }
+      })();
+    </script>
+</body>
+</html>
